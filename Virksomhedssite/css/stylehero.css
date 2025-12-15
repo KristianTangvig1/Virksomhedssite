@@ -84,3 +84,201 @@ body {
   background: #fff;
   color: #000;
 }
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+h1,
+h2 {
+  color: var(--accent);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.2rem;
+}
+
+/* INTRO */
+.intro {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.intro-text p {
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+}
+
+.intro-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+/* LOCATIONS */
+.locations h2 {
+  margin-bottom: 3rem;
+}
+
+.location-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.location-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 6px;
+}
+
+.location-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.location-card .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.location-card h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.btn2 {
+  background: var(--button);
+  color: var(--text);
+  text-decoration: none;
+  padding: 0.6rem 1.4rem;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+/* GALLERY */
+.gallery h2 {
+  margin-bottom: 3rem;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .intro {
+    grid-template-columns: 1fr;
+  }
+
+  .location-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.location-card img {
+  transition: transform 0.5s ease;
+}
+
+.location-card:hover img {
+  transform: scale(1.08);
+}
+
+.location-card .overlay {
+  transition: background 0.4s ease;
+}
+
+.location-card:hover .overlay {
+  background: rgba(0, 0, 0, 0.55);
+}
+
+.btn2 {
+  transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn2:hover {
+  background: #d8b77f;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-grid img {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.intro-image img {
+  transition: transform 0.6s ease;
+}
+
+.intro-image img:hover {
+  transform: scale(1.04);
+}
+
+h2 {
+  position: relative;
+}
+
+h2::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  width: 0;
+  height: 2px;
+  background: var(--accent);
+  transition: width 0.4s ease, left 0.4s ease;
+}
+
+section:hover h2::after {
+  width: 80px;
+  left: calc(50% - 40px);
+}
