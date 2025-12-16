@@ -112,7 +112,6 @@ p {
   height: 64px;
   object-fit: cover;
   display: block;
-  border: 4px solid #faf5eb;
 }
 
 .site-title {
