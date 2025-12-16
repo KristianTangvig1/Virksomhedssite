@@ -3,9 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
     <title>Hanoi Alley – Menu</title>
-    <link rel="stylesheet" href="../css/style.css" />
-    <link rel="stylesheet" href="../css/layout.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&display=swap");
+    </style>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+    </style>
   </head>
 
   <body>
@@ -13,7 +19,7 @@
     <header class="header">
       <div class="container header-inner">
         <div class="vietnamese">
-          <div class="logo"><img src="../menu-webp-img/hanoialleylogo.webp" alt="Hanoi Alley logo" /></div>
+          <div class="logo"><img src="imgs/hanoialleylogo.webp" alt="Hanoi Alley logo" /></div>
           <div class="site-title">Vietnamese Street Food</div>
         </div>
         <nav class="main-nav">
@@ -41,35 +47,190 @@
     <!-- MENU GRID (15 BILLEDER) -->
     <section class="menu-grid">
       <div class="container grid-inner">
-        <!-- 15 images from ../menu-webp-img/ -->
-        <div class="menu-item"><img src="../menu-webp-img/1_result.webp" alt="Menu image 1" /></div>
-        <div class="menu-item"><img src="../menu-webp-img/2_result.webp" alt="Menu image 2" /></div>
-        <div class="menu-item"><img src="../menu-webp-img/3_result.webp" alt="Menu image 3" /></div>
+        <article class="menu1">
+          <div class="menu-item"><img src="imgs/menu1.webp" alt="Menu image 1" /></div>
+          <button popovertarget="menu1" class="cta_btn">Pris</button>
+          <div popover id="menu1">
+            <img src="imgs/menu1.webp" alt="Menu image 1" />
+            <h1>BÁNH BAO</h1>
+            <p>Pris: 50 DKK</p>
+            <p>Beskrivelse: Frisk forårsrulle med rejer, svinekød, risnudler og sprøde grøntsager, serveret med hoisinsauce.</p>
+          </div>
+        </article>
 
-        <div class="menu-item"><img src="../menu-webp-img/4_result.webp" alt="Menu image 4" /></div>
-        <div class="menu-item"><img src="../menu-webp-img/5_result.webp" alt="Menu image 5" /></div>
-        <div class="menu-item"><img src="../menu-webp-img/6_result.webp" alt="Menu image 6" /></div>
+        <article class="menu2">
+          <div class="menu-item"><img src="imgs/menu2.webp" alt="Menu image 2" /></div>
+          <button popovertarget="menu2" class="cta_btn">Pris</button>
+          <div popover id="menu2">
+            <img src="imgs/menu2.webp" alt="Menu image 2" />
+            <h1>BÁNH MÌ</h1>
+            <p>Pris: 60 DKK</p>
+            <p>Beskrivelse: Sprød vietnamesisk baguette med marineret svinekød, friske grøntsager og hjemmelavet mayo.</p>
+          </div>
+        </article>
 
-        <div class="menu-item"><img src="../menu-webp-img/7_result.webp" alt="Menu image 7" /></div>
-        <div class="menu-item"><img src="../menu-webp-img/8_result.webp" alt="Menu image 8" /></div>
-        <div class="menu-item"><img src="../menu-webp-img/9_result.webp" alt="Menu image 9" /></div>
+        <article class="menu3">
+          <div class="menu-item"><img src="imgs/menu3.webp" alt="Menu image 3" /></div>
+          <button popovertarget="menu3" class="cta_btn">Pris</button>
+          <div popover id="menu3">
+            <img src="imgs/menu3.webp" alt="Menu image 3" />
+            <h1>BÁNH XÈO</h1>
+            <p>Pris: 70 DKK</p>
+            <p>Beskrivelse: Dampede rispapirruller fyldt med kylling, friske urter og grøntsager, serveret med peanut sauce.</p>
+          </div>
+        </article>
 
-        <div class="menu-item"><img src="../menu-webp-img/10_result.webp" alt="Menu image 10" /></div>
-        <div class="menu-item"><img src="../menu-webp-img/11_result.webp" alt="Menu image 11" /></div>
-        <div class="menu-item"><img src="../menu-webp-img/12_result.webp" alt="Menu image 12" /></div>
+        <article class="menu4">
+          <div class="menu-item"><img src="imgs/menu4.webp" alt="Menu image 4" /></div>
+          <button popovertarget="menu4" class="cta_btn">Pris</button>
+          <div popover id="menu4">
+            <img src="imgs/menu4.webp" alt="Menu image 4" />
+            <h1>BÒ LÁ LỐT</h1>
+            <p>Pris: 80 DKK</p>
+            <p>Beskrivelse: Sprøde forårsruller fyldt med grøntsager og serveret med sød chilisauce.</p>
+          </div>
+        </article>
 
-        <div class="menu-item"><img src="./menu-webp-img/13_result.webp" alt="Menu image 13" /></div>
-        <div class="menu-item"><img src="./menu-webp-img/14_result.webp" alt="Menu image 14" /></div>
-        <div class="menu-item"><img src="./menu-webp-img/15_result.webp" alt="Menu image 15" /></div>
+        <article class="menu5">
+          <div class="menu-item"><img src="imgs/menu5.webp" alt="Menu image 5" /></div>
+          <button popovertarget="menu5" class="cta_btn">Pris</button>
+          <div popover id="menu5">
+            <img src="imgs/menu5.webp" alt="Menu image 5" />
+            <h1>BÚN</h1>
+            <p>Pris: 90 DKK</p>
+            <p>Beskrivelse: Vietnamesisk nudelsalat med marineret oksekød, friske urter og ristede peanuts.</p>
+          </div>
+        </article>
+
+        <article class="menu6">
+          <div class="menu-item"><img src="imgs/menu6.webp" alt="Menu image 6" /></div>
+          <button popovertarget="menu6" class="cta_btn">Pris</button>
+          <div popover id="menu6">
+            <img src="imgs/menu6.webp" alt="Menu image 6" />
+            <h1>BÚN CHẢ CÁ</h1>
+            <p>Pris: 100 DKK</p>
+            <p>Beskrivelse: Pho suppe med oksekød, risnudler og friske krydderurter.</p>
+          </div>
+        </article>
+
+        <article class="menu7">
+          <div class="menu-item"><img src="imgs/menu7.webp" alt="Menu image 7" /></div>
+          <button popovertarget="menu7" class="cta_btn">Pris</button>
+          <div popover id="menu7">
+            <img src="imgs/menu7.webp" alt="Menu image 7" />
+            <h1>CƠM GÀ HỘI AN</h1>
+            <p>Pris: 110 DKK</p>
+            <p>Beskrivelse: Banh mi med marineret kylling, friske grøntsager og chilimayo.</p>
+          </div>
+        </article>
+
+        <article class="menu8">
+          <div class="menu-item"><img src="imgs/menu8.webp" alt="Menu image 8" /></div>
+          <button popovertarget="menu8" class="cta_btn">Pris</button>
+          <div popover id="menu8">
+            <img src="imgs/menu8.webp" alt="Menu image 8" />
+            <h1>GỎI CUỐN</h1>
+            <p>Pris: 120 DKK</p>
+            <p>Beskrivelse: Kyllingesalat med risnudler, friske urter og jordnødder.</p>
+          </div>
+        </article>
+
+        <article class="menu9">
+          <div class="menu-item"><img src="imgs/menu9.webp" alt="Menu image 9" /></div>
+          <button popovertarget="menu9" class="cta_btn">Pris</button>
+          <div popover id="menu9">
+            <img src="imgs/menu9.webp" alt="Menu image 9" />
+            <h1>GỎI ĐU ĐỦ</h1>
+            <p>Pris: 130 DKK</p>
+            <p>Beskrivelse: Stegte ris med grøntsager, æg og valg af kød.</p>
+          </div>
+        </article>
+
+        <article class="menu10">
+          <div class="menu-item"><img src="imgs/menu10.webp" alt="Menu image 10" /></div>
+          <button popovertarget="menu10" class="cta_btn">Pris</button>
+          <div popover id="menu10">
+            <img src="imgs/menu10.webp" alt="Menu image 10" />
+            <h1>GỎI MIẾN</h1>
+            <p>Pris: 140 DKK</p>
+            <p>Beskrivelse: Kylling i karry med ris, grøntsager og sprøde løg.</p>
+          </div>
+        </article>
+
+        <article class="menu11">
+          <div class="menu-item"><img src="imgs/menu11.webp" alt="Menu image 11" /></div>
+          <button popovertarget="menu11" class="cta_btn">Pris</button>
+          <div popover id="menu11">
+            <img src="imgs/menu11.webp" alt="Menu image 11" />
+            <h1>HOÀNH THÁNH CHIÊN</h1>
+            <p>Pris: 150 DKK</p>
+            <p>Beskrivelse: Oksekød med sød chilisauce, serveret med ris og grøntsager.</p>
+          </div>
+        </article>
+
+        <article class="menu12">
+          <div class="menu-item"><img src="imgs/menu12.webp" alt="Menu image 12" /></div>
+          <button popovertarget="menu12" class="cta_btn">Pris</button>
+          <div popover id="menu12">
+            <img src="imgs/menu12.webp" alt="Menu image 12" />
+            <h1>NEM RÁN CHAY</h1>
+            <p>Pris: 160 DKK</p>
+            <p>Beskrivelse: Stegt tofu med grøntsager og risnudler i sojasauce.</p>
+          </div>
+        </article>
+
+        <article class="menu13">
+          <div class="menu-item"><img src="imgs/menu13.webp" alt="Menu image 13" /></div>
+          <button popovertarget="menu13" class="cta_btn">Pris</button>
+          <div popover id="menu13">
+            <img src="imgs/menu13.webp" alt="Menu image 13" />
+            <h1>PHỞ</h1>
+            <p>Pris: 170 DKK</p>
+            <p>Beskrivelse: Friske forårsruller med rejer, svinekød og risnudler, serveret med hoisinsauce.</p>
+          </div>
+        </article>
+
+        <article class="menu14">
+          <div class="menu-item"><img src="imgs/menu1.webp" alt="Menu image 14" /></div>
+          <button popovertarget="menu14" class="cta_btn">Pris</button>
+          <div popover id="menu14">
+            <img src="imgs/menu1.webp" alt="Menu image 14" />
+            <h1>NEM RÁN CHAY</h1>
+            <p>Pris: 180 DKK</p>
+            <p>Beskrivelse: Vietnamesisk nudelsuppe med kylling, friske urter og lime.</p>
+          </div>
+        </article>
+
+        <article class="menu15">
+          <div class="menu-item"><img src="imgs/menu2.webp" alt="Menu image 15" /></div>
+          <button popovertarget="menu15" class="cta_btn">Pris</button>
+          <div popover id="menu15">
+            <img src="imgs/menu2.webp" alt="Menu image 15" />
+            <h1>Menu 15</h1>
+            <p>Pris: 190 DKK</p>
+            <p>Beskrivelse: Krydret oksekød med ris, serveret med grøntsager og sojasauce.</p>
+          </div>
+        </article>
       </div>
     </section>
-
     <!-- FOOTER -->
-    <footer class="menu-footer">
-      <div class="container">
-        <p>Footer</p>
+
+    <footer>
+      <div class="footer">
+        <div class="footer-grid_1">
+          <img class="footer_logo" src="img/4153B51D-A574-4459-886A-BEA2D48003EE_result.webp" alt="" />
+          <h3>Inspired by Vietnamese street food</h3>
+        </div>
+        <div class="footer-grid_2">
+          <h3>Hanoi Alley 2022 copyright. All rights reserved. ​</h3>
+        </div>
+        <div class="footer-grid_3">
+          <h3>Social Network</h3>
+          <img class="footer_SN" src="img/socialt_network.webp" alt="" />
+        </div>
       </div>
     </footer>
+
     <script src="js/login.js"></script>
   </body>
 </html>
