@@ -3,7 +3,9 @@ body {
   background-color: #faf5eb;
 }
 
-h1,h2,h3 {
+h1,
+h2,
+h3 {
   font-family: "Oswald", sans-serif;
   font-weight: 700;
   color: #faf5eb;
@@ -112,7 +114,6 @@ p {
   height: 64px;
   object-fit: cover;
   display: block;
-  border: 4px solid #faf5eb;
 }
 
 .site-title {
