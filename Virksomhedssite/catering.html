@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hanoi Alley-Catering</title>
+    <link rel="stylesheet" href="/css/catering-layout.css" />
+    <link rel="stylesheet" href="/css/catering.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&display=swap⁩"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <div class="container header-inner">
+        <div class="vietnamese">
+          <div class="logo">
+            <img src="/imgs/logo.webp" alt="Hanoi Alley logo" />
+          </div>
+          <div class="site-title">Vietnamese Street Food</div>
+        </div>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Lokationer</a></li>
+            <li><a href="#">Catering</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+      <!-- HERO / CATERING INTRO -->
+      <section class="catering-hero">
+        <div class="catering-image">
+          <img src="/imgs/catering.webp" alt="catering fra Hanoi Alley" />
+        </div>
+
+        <div class="catering-text one-step-back">
+          <h1 class="h1-catering">Catering</h1>
+          <p class="catering-p">
+            Bring smagen af Vietnam med til din næste fest
+          </p>
+
+          <p>
+            Hos Hanoi Alley tilbyder vi lækker og autentisk catering med alt fra
+            friske forårsruller til varme, velsmagende retter lavet med
+            kærlighed og kvalitetsråvarer.
+          </p>
+          <p>
+            Uanset om det er til fødselsdag, firmaarrangement eller en hyggelig
+            middag med venner, skræddersyr vi menuen, så den passer til jeres
+            behov.
+          </p>
+          <p>
+            Kontakt os for et tilbud og lad os hjælpe med at gøre jeres
+            arrangement ekstra velsmagende.
+          </p>
+        </div>
+      </section>
+
+      <hr />
+    
+
+      <!-- REQUEST CATERING + FORMULAR -->
+      <section class="request-catering">
+        <header class="request-intro">
+          <h2>Request catering</h2>
+          <p>
+            Udfyld formularen med dine oplysninger og ønsker, så vender vi
+            tilbage hurtigst muligt med et skræddersyet cateringtilbud.
+          </p>
+        </header>
+
+        <form
+          class="request-form"
+          action="/send-catering-request"
+          method="post"
+        >
+          <div class="request-form__row">
+            <div class="field-group">
+              <label for="first-name">Navn</label>
+              <input type="text" id="first-name" name="first_name" required />
+            </div>
+
+            <div class="field-group">
+              <label for="last-name">Efternavn</label>
+              <input type="text" id="last-name" name="last_name" required />
+            </div>
+          </div>
+
+          <div class="field-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+
+          <div class="field-group">
+            <label for="phone">Telefonnummer</label>
+            <input type="tel" id="phone" name="phone" required />
+          </div>
+
+          <div class="field-group">
+            <label for="date">Dato</label>
+            <input type="date" id="date" name="date" required />
+          </div>
+
+          <div class="field-group">
+            <label for="time">Tidspunkt</label>
+            <input type="time" id="time" name="time" />
+          </div>
+
+          <div class="field-group">
+            <label for="message">Besked</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              placeholder="Skriv lidt om antal personer, type arrangement osv."
+            ></textarea>
+          </div>
+
+          <div class="knap">
+            <button class="button" type="submit">Send forespørgsel</button>
+          </div>
+     
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer">
+        <div class="footer-grid_1">
+          <img
+            class="footer_logo"
+            src="img/4153B51D-A574-4459-886A-BEA2D48003EE_result.webp"
+            alt=""
+          />
+          <h3>Inspired by Vietnamese street food</h3>
+        </div>
+        <div class="footer-grid_2">
+          <h3>Hanoi Alley 2022 copyright. All rights reserved. ​</h3>
+        </div>
+        <div class="footer-grid_3">
+          <h3>Social Network</h3>
+          <img class="footer_SN" src="img/socialt_network.webp" alt="" />
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
