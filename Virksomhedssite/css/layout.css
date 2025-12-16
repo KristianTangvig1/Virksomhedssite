@@ -54,7 +54,7 @@ body {
 
 /***************************************** HEADER **********************************/
 .header {
-  background: #faf5eb;
+  background: #7a2b2b;
   border: 2px solid rgba(0, 0, 0, 0.08);
   padding: 16px 0;
 }
@@ -81,7 +81,7 @@ body {
 .site-title {
   font-size: 20px;
   font-weight: 700;
-  color: #7a2b2b;
+  color: #faf5eb;
 }
 .main-nav ul {
   display: flex;
@@ -91,7 +91,7 @@ body {
   padding: 0;
 }
 .main-nav a {
-  color: #7a2b2b;
+  color: #faf5eb;
   text-decoration: none;
   font-weight: 700;
 }
