@@ -282,3 +282,7 @@ section:hover h2::after {
   width: 80px;
   left: calc(50% - 40px);
 }
+
+.site_color{
+  color: #7a2b2b;
+}
